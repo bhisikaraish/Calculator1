@@ -1,0 +1,67 @@
+<<!DOCTYPE html>
+<html>
+<hr style="border:10px solid cyan;">
+
+<table align="center">
+	<tr>
+		<td> Enter Number 1: </td>
+		<td><input type="text" id="num1"></td>
+	</tr>
+	<tr>
+		<td> Enter Number 2: </td>
+		<td><input type="text" id="num2"></td>
+	</tr>
+	<tr>
+		<td> Answer </td>
+		<td><input type="text" id="ans"></td>
+	</tr>
+	
+</table>
+<table align="center">
+	<tr>
+		<td><button onclick="add()">+</button></td>
+		<td><button onclick="sub()">-</button></td>
+		<td><button onclick="mul()">*</button></td>
+		<td><button onclick="divd()">/</button></td>
+	</tr>
+	
+</table>
+<style>
+	button
+	{
+		padding: 12px 32px;
+		background-color: lightblue;
+		color: darkblue;
+	}
+</style>
+</html>
+<script>
+	function add(argument) {
+		var a,b,c;
+		a=Number(document.getElementById('num1').value);
+		b=Number(document.getElementById('num2').value);
+		c=a+b;
+		document.getElementById('ans').value=c;
+	}
+	function sub(argument) {
+		var a,b,c;
+		a=Number(document.getElementById('num1').value);
+		b=Number(document.getElementById('num2').value);
+		c=a-b;
+		document.getElementById('ans').value=c;
+	}
+	function mul(argument) {
+		var a,b,c;
+		a=Number(document.getElementById('num1').value);
+		b=Number(document.getElementById('num2').value);
+		c=a*b;
+		document.getElementById('ans').value=c;
+	}
+	function divd(argument) {
+		var a,b,c;
+		a=Number(document.getElementById('num1').value);
+		b=Number(document.getElementById('num2').value);
+		c=a/b;
+		document.getElementById('ans').value=c;
+	}
+</script>
